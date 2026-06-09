@@ -67,7 +67,7 @@ const Scroll = () => {
   }, []);
 
   return (
-    <section className="relative overflow-hidden w-full h-20 p-10">
+    <section className="relative overflow-hidden w-full h-20 p-10 mt-6">
       {/* Left Fade */}
       <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-32 bg-linear-to-r from-black to-transparent" />
 
@@ -82,15 +82,15 @@ const Scroll = () => {
         
           <div
             key={index}
-            className="mx-8 mt-1 flex items-center gap-8"
+            className="sm:mx-2 md:mx-4  mt-1 flex items-center  gap-8 "
           >
 
             
-            <h2 className="text-xl font-black uppercase tracking-tight text-white md:text-2xl">
+            <h2 className="text-xl font-black uppercase tracking-tight  text-(--primary-offwhite-color) hover:text-white/80 md:text-2xl ">
               {item}
             </h2>
 
-            <span className="text-3xl text-blue-500">.✦.</span>
+            <span className="text-3xl pr-4 text-blue-500">.✦.</span>
           </div>
         ))}
       </div>

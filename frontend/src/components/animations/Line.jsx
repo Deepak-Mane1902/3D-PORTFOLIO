@@ -8,28 +8,51 @@ const Line = () => {
     gsap.fromTo(
       markerRef.current,
       {
-        y: -80,
+        y: -20,
       },
       {
-        y: 320,
-        duration: 1.5,
+        y: 40,
+        duration: 1.8,
         repeat: -1,
+        yoyo: true,
         ease: "power2.inOut",
       }
     );
   }, []);
 
   return (
-    <div className="flex items-center text-center">
-          <div className="flex  justify-center py-20 pl-50 mt-[-9vw]">
-      <div className="relative h-14 w-1.5 overflow-hidden  bg-neutral-800">
+    <div className="liner flex flex-col sm:mt-0 sm:ml-0 md:mt-[-2vw] md:ml-[10vw] items-center sm:gap-5 md:gap-7">
+      <div className="relative h-10  md:h-20 w-1.5  overflow-hidden bg-neutral-800">
         <div
           ref={markerRef}
-          className="absolute left-0 h-20 w-full rounded-full bg-(--primary-text-color) shadow-[0_0_25px_rgba(239,68,68,0.8)]"
+          className="
+            absolute
+            left-0
+            h-10
+            rounded-full
+            w-full
+            bg-(--primary-text-color)
+            shadow-[0_0_12px_rgba(72,170,255,.8)]
+          "
         />
       </div>
-    </div>
-      <p className="rotate-90 text-[0.8vw] ml-[-2vw] tracking-wider">SCROLL</p>
+
+      <p
+        className="
+          text-[10px]
+          sm:text-xs
+          sm:mt-[-25vw]
+          md:mt-0
+          md:text-[0.5em]
+          tracking-[0.2em]
+          sm:rotate-0
+          md:rotate-90
+          origin-center
+          opacity-40
+        "
+      >
+        SCROLL
+      </p>
     </div>
   );
 };
