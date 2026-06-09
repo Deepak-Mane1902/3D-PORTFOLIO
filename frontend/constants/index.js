@@ -1,0 +1,27 @@
+export const socialMedia = [
+  {
+    id:1,
+    name:"whatsapp",
+    url:"https://web.whatsapp.com/"
+  },
+  {
+    id:2,
+    name:"github",
+    url:"https://github.com/"
+  },
+  {
+    id:1,
+    name:"linkedin",
+    url:"https://linkedin.com/in/"
+  },
+  {
+    id:1,
+    name:"twitter",
+    url:"https://twitter.com/"
+  },
+  {
+    id:1,
+    name:"instagram",
+    url:"https://instagram.com/"
+  },
+]

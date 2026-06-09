@@ -15,12 +15,14 @@
   }
 }
 
+
 :root{
      --primary-background-color:#0B0B0A;
      --primary-text-color:#48AAFF;
      --primary-offtext-color:#175e9c;
      --primary-offwhite-color:#BBBBBD;
      --text-gray-color:#8A8A86;
+     --text-offgray-color:#9F9F9F;
      --cursor-border-color:#2C2C2C;
      --cursor-red-color:#FE2F03;
      --cursor-offred-color:#932911;
